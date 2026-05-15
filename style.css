@@ -84,3 +84,27 @@ th {
     background-color: #333;
     color: #00ff00;
 }
+
+/* --- СКЛАДНІ СЕЛЕКТОРИ --- */
+
+/* 1. Контекстний селектор */
+p i {
+    color: #ff5722; 
+    font-weight: bold;
+}
+
+/* 2. Дочірній селектор */
+nav > a {
+    border: 1px solid #00ff00;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #333;
+}
+
+/* 3. Сусідній селектор */
+h1 + p {
+    font-size: 1.2em;
+    color: #ffffff;
+    border-left: 3px solid #ffeb3b;
+    padding-left: 15px;
+}
