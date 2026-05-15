@@ -108,3 +108,62 @@ h1 + p {
     border-left: 3px solid #ffeb3b;
     padding-left: 15px;
 }
+
+
+/* Позиціонування шапки */
+#header-section {
+    position: relative;
+    padding: 20px;
+    background-color: purple;
+    border-bottom: 2px solid #333;
+}
+
+/* Плаваючий блок (Sidebar) */
+.promo-sidebar {
+    float: right; /* Блок "плаває" праворуч */
+    width: 200px;
+    padding: 15px;
+    margin: 10px;
+    background-color: darkgreen;
+    border: 2px dashed #ff9800;
+}
+
+/* Рядковий елемент span всередині плаваючого блоку */
+.promo-sidebar span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e65100;
+}
+
+/* ПСЕВДОКЛАСИ ДЛЯ ПОСИЛАНЬ */
+a:link { color: #007bff; }       /* Не відвідане */
+a:visited { color: #6f42c1; }    /* Відвідане */
+a:hover {                        /* При наведенні */
+    color: #ff5722 !important; 
+    text-decoration: underline; 
+}
+a:active { color: #4caf50; }     /* В момент натискання */
+
+/* Псевдоклас :first-child */
+.main-container p:first-child {
+    font-style: italic;
+    border-left: 5px solid #007bff;
+}
+
+/*  ПСЕВДОЕЛЕМЕНТИ  */
+
+/* Додає іконку перед заголовком h2 */
+h2:before {
+    content: "🎮 ";
+}
+
+/* Додає текст після посилань у навігації, крім останнього */
+nav a:after {
+    content: " •";
+    color: grey;
+    margin-left: 5px;
+}
+
+nav a:last-child:after {
+    content: ""; /* Прибираємо крапку після останнього посилання */
+}

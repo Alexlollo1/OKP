@@ -5,51 +5,73 @@
     <meta name="author" content="Сенчило Олексій">
     <link rel="stylesheet" href="style.css">
     <title>Головна - Світ Геймінгу</title>
+    <style>
+        /* Стиль рівня документу для перевизначення посилань */
+        a { color: #00bcd4; text-decoration: none; }
+    </style>
 </head>
 <body>
-    <h1 id="top">Ігровий Портал: Огляди та Рекомендації</h1>
-    
-    <nav>
-        <a href="index.html">Головна</a> | 
-        <a href="about.html">Про жанри</a> | 
-        <a href="services.html">Послуги</a> | 
-        <a href="contacts.html">Контакти</a>
-    </nav>
+    <div id="header-section">
+        <h1 id="top">Ігровий Портал: Огляди та Рекомендації</h1>
+        <nav>
+            <a href="index.html">Головна</a> | 
+            <a href="about.html">Про жанри</a> | 
+            <a href="services.html">Послуги</a> | 
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </div>
 
-    <p>Комп'ютерні ігри стали невід'ємною частиною сучасної культури. Вони поєднують у собі складне програмування, <b>цифрове мистецтво</b> та <i>стратегічне мислення</i>.</p>
-    
-    <p>На нашому сайті ви знайдете актуальну інформацію про новинки індустрії та корисні поради для геймерів.</p>
+    <hr>
 
-    <h2>Порівняння ігрових платформ</h2>
-    <table border="1" cellpadding="10" cellspacing="5">
-        <caption>Технічний аналіз платформ</caption>
-        <colgroup>
-            <col span="1" align="left">
-            <col span="2" align="center">
-        </colgroup>
-        <thead>
-            <tr bgcolor="#cccccc">
-                <th>Платформа</th>
-                <th>Тип керування</th>
-                <th>Переваги</th>
+    <div class="promo-sidebar">
+        <h3>Акція дня!</h3>
+        <p>Знижки в Steam до <span>80%</span> на всі шутери!</p>
+    </div>
+
+    <div class="main-container">
+        <p style="background-color: darkblue; padding: 10px;">
+            <span style="color: red; font-weight: bold;">!</span> 
+            Комп'ютерні ігри стали невід'ємною частиною сучасної культури. Вони поєднують у собі складне програмування, <b>цифрове мистецтво</b> та <i>стратегічне мислення</i>.
+        </p>
+        
+        <p>На нашому сайті ви знайдете актуальну інформацію про новинки індустрії та корисні поради для геймерів.</p>
+
+        <h2>Порівняння ігрових платформ</h2>
+        <table border="1" cellpadding="10" cellspacing="5">
+            <caption>Технічний аналіз платформ</caption>
+            <colgroup>
+                <col span="1" align="left">
+                <col span="2" align="center">
+            </colgroup>
+            <thead>
+                <tr bgcolor="#cccccc">
+                    <th>Платформа</th>
+                    <th>Тип керування</th>
+                    <th>Переваги</th>
+                </tr>
+            </thead>
+            <tr>
+                <td rowspan="2">PC (Персональний комп'ютер)</td>
+                <td>Клавіатура та миша</td>
+                <td>Точність у шутерах</td>
             </tr>
-        </thead>
-        <tr>
-            <td rowspan="2">PC (Персональний комп'ютер)</td>
-            <td>Клавіатура та миша</td>
-            <td>Точність у шутерах</td>
-        </tr>
-        <tr>
-            <td>Геймпад</td>
-            <td>Універсальність</td>
-        </tr>
-        <tr>
-            <td colspan="2">Ігрові консолі (PS/Xbox)</td>
-            <td>Ексклюзивні ігри</td>
-        </tr>
-    </table>
+            <tr>
+                <td>Геймпад</td>
+                <td>Універсальність</td>
+            </tr>
+            <tr>
+                <td colspan="2">Ігрові консолі (PS/Xbox)</td>
+                <td>Ексклюзивні ігри</td>
+            </tr>
+        </table>
+    </div>
+
+    <div style="clear: both;"></div>
 
     <p><a href="#top">Повернутися на початок сторінки</a></p>
     <p>Зовнішнє посилання: <a href="https://store.steampowered.com" target="_blank" style="color: blue;">Магазин ігор Steam</a></p>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
