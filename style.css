@@ -29,7 +29,7 @@ a {
 /* Псевдоклас для наведення на посилання */
 a:hover {
     text-decoration: underline;
-    color: #ffffff !important; /* Використання !important для пріоритету */
+    color: #ffffff !important; 
 }
 
 /* --- СТИЛІ ДЛЯ СПИСКІВ --- */
@@ -83,4 +83,19 @@ th, td {
 th {
     background-color: #333;
     color: #00ff00;
+}
+
+.highlight {
+    color: #00bcd4;
+    font-weight: bold;
+}
+
+.pop {
+    color: yellow;
+    font-size: large;
+}
+
+#pop {
+    color: grey;
+    font-size: large;
 }
